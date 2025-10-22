@@ -412,8 +412,9 @@ body {
 .pdf-download-section {
     margin-top: 4rem;
     margin-bottom: 3rem;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
 }
 
 .pdf-download-card {
@@ -590,6 +591,10 @@ body {
 
     .gamma-visual {
         min-height: 220px;
+    }
+
+    .pdf-download-section {
+        grid-template-columns: 1fr;
     }
 
     .pdf-download-card {
